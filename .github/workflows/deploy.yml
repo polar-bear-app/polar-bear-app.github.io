@@ -8,6 +8,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read # Required to read the repository contents
+      pages: write # Required to deploy to GitHub Pages
+      id-token: write # Required for authentication with GitHub Pages
 
     steps:
       - name: Checkout code
@@ -27,8 +31,15 @@ jobs:
       - name: Build Docusaurus site
         run: pnpm run build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      # Must run in the same job, otherwise previous output won't be kept
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build # The default output directory of Docusaurus
+          path: "./build" # Default output directory for Docusaurus build
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
