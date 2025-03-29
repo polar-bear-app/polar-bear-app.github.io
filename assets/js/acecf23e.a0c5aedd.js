@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpolar_bear_app_github_io=self.webpackChunkpolar_bear_app_github_io||[]).push([[903],{1912:a=>{a.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"Blog","authorsListPath":"/blog/authors"}')}}]);

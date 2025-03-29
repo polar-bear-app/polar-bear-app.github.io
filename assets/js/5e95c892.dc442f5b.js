@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpolar_bear_app_github_io=self.webpackChunkpolar_bear_app_github_io||[]).push([[647],{4470:(e,r,a)=>{a.r(r),a.d(r,{default:()=>l});a(8101);var s=a(3526),p=a(8154),u=a(4166),t=a(8357),c=a(6667),i=a(5105);function l(e){return(0,i.jsx)(p.e3,{className:(0,s.A)(u.G.wrapper.docsPages),children:(0,i.jsx)(c.A,{children:(0,t.v)(e.route.routes)})})}}}]);
