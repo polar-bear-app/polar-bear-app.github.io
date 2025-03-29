@@ -6,7 +6,8 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "Polar Bear App",
-  tagline: "Dinosaurs are cool",
+  tagline:
+    "Polar Bear helps you run a desktop Linux environment on your Android device.",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -101,8 +102,12 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Tutorial",
-              to: "/docs/intro",
+              label: "User Manual",
+              to: "/docs/user/getting-started",
+            },
+            {
+              label: "Developer Manual",
+              to: "/docs/developer/build",
             },
           ],
         },
@@ -132,7 +137,7 @@ const config: Config = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/polar-bear-app/new-polar-bear",
             },
           ],
         },
