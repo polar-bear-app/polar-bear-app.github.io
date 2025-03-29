@@ -43,6 +43,8 @@ The hardest part is to install `yay` or `paru`, you have to follow the README.md
 
 After Xfce launches, go to Applications > Accessories > Onboard. This is an on-screen keyboard. But you are highly recommended to get a physical keyboard.
 
+## Disable phantom process killer
+
 ## What worked?
 
 ## What didn't work?
