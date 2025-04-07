@@ -61,8 +61,19 @@ const config: Config = {
         theme: {
           customCss: "./src/css/custom.css",
         },
+        gtag: {
+          trackingID: "G-0NQ9P761VB",
+        },
       } satisfies Preset.Options,
     ],
+  ],
+
+  scripts: [
+    {
+      src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4231427019106835",
+      async: true,
+      crossorigin: "anonymous",
+    },
   ],
 
   themeConfig: {
@@ -149,6 +160,13 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+  plugins: [
+    [
+      "@gracefullight/docusaurus-plugin-microsoft-clarity",
+      { projectId: "r0gcnlvoyw" },
+    ],
+  ],
 };
 
 export default config;
