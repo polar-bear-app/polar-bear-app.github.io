@@ -64,6 +64,12 @@ const config: Config = {
         gtag: {
           trackingID: "G-0NQ9P761VB",
         },
+        sitemap: {
+          changefreq: "always",
+          priority: 0.5,
+          ignorePatterns: ["/tags/**"],
+          filename: "sitemap.xml",
+        },
       } satisfies Preset.Options,
     ],
   ],
@@ -98,7 +104,7 @@ const config: Config = {
           position: "left",
           label: "Developer Manual",
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        // { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/polar-bear-app/new-polar-bear",
           label: "GitHub",
@@ -142,10 +148,10 @@ const config: Config = {
         {
           title: "More",
           items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
+            // {
+            //   label: "Blog",
+            //   to: "/blog",
+            // },
             {
               label: "GitHub",
               href: "https://github.com/polar-bear-app/new-polar-bear",
