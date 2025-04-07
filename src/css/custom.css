@@ -28,3 +28,12 @@
   --ifm-color-primary-lightest: var(--ifm-color-primary);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+img[src$="#boxed"] {
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  max-width: 80%;
+}
+p:has(img[src$="#boxed"]) {
+  text-align: center;
+}
