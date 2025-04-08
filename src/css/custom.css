@@ -27,6 +27,10 @@
   --ifm-color-primary-lighter: var(--ifm-color-primary);
   --ifm-color-primary-lightest: var(--ifm-color-primary);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  .dark-invert {
+    filter: brightness(0) invert(1);
+  }
 }
 
 img[src$="#boxed"] {

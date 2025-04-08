@@ -88,8 +88,9 @@ const config: Config = {
     navbar: {
       title: "Polar Bear App",
       logo: {
-        alt: "My Site Logo",
+        alt: "Polar Bear Logo",
         src: "img/polar-bear.png",
+        className: "dark-invert",
       },
       items: [
         {
@@ -116,50 +117,19 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Docs",
-          items: [
-            {
-              label: "User Manual",
-              to: "/docs/user/getting-started",
-            },
-            {
-              label: "Developer Manual",
-              to: "/docs/developer/build",
-            },
-          ],
+          label: "User Manual",
+          to: "/docs/user/getting-started",
         },
         {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "X",
-              href: "https://x.com/docusaurus",
-            },
-          ],
+          label: "Developer Manual",
+          to: "/docs/developer/build",
         },
         {
-          title: "More",
-          items: [
-            // {
-            //   label: "Blog",
-            //   to: "/blog",
-            // },
-            {
-              label: "GitHub",
-              href: "https://github.com/polar-bear-app/new-polar-bear",
-            },
-          ],
+          label: "GitHub",
+          href: "https://github.com/polar-bear-app/new-polar-bear",
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Polar Bear App.`,
     },
     prism: {
       theme: prismThemes.github,

@@ -5,14 +5,14 @@ import styles from "./styles.module.css";
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<"svg">>;
+  icon: string;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
     title: "Rootless",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    icon: require("@site/static/img/feature-rootless.webp").default,
     description: (
       <>
         Polar Bear does <b>not</b> require root access to run.
@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Standalone",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    icon: require("@site/static/img/feature-standalone.webp").default,
     description: (
       <>
         Polar Bear is <b>not</b> a set of instructions on how to setup a Linux
@@ -31,21 +31,32 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: "FOSS",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    title: "Efficient",
+    icon: require("@site/static/img/feature-efficient.webp").default,
     description: (
       <>
-        Polar Bear is <b>free and open-source</b>.
+        Polar Bear is built with <b>Rust</b> and runs entirely in native code.
+        By using the <b>Wayland</b> protocol, it incurs less overhead compared
+        to X or VNC alternatives.
+      </>
+    ),
+  },
+  {
+    title: "FOSS",
+    icon: require("@site/static/img/feature-foss.webp").default,
+    description: (
+      <>
+        Polar Bear is <b>free and open-source</b>, and will always be.
       </>
     ),
   },
 ];
 
-function Feature({ title, Svg, description }: FeatureItem) {
+function Feature({ title, icon, description }: FeatureItem) {
   return (
-    <div className={clsx("col col--4")}>
+    <div className={clsx("col col--3")}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img className={styles.featureSvg} role="img" src={icon} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
