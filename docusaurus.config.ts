@@ -141,6 +141,9 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    mermaid: {
+      theme: { light: "forest" },
+    },
   } satisfies Preset.ThemeConfig,
 
   plugins: [
@@ -149,6 +152,12 @@ const config: Config = {
       { projectId: "r0gcnlvoyw" },
     ],
   ],
+
+  markdown: {
+    mermaid: true,
+  },
+
+  themes: ["@docusaurus/theme-mermaid"],
 
   customFields: {
     downloadUrl,
