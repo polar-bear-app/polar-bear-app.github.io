@@ -4,6 +4,8 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const downloadUrl = "https://github.com/polar-bear-app/new-polar-bear/releases";
+
 const config: Config = {
   title: "Polar Bear App",
   tagline:
@@ -11,7 +13,7 @@ const config: Config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://polar-bear-app.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -122,10 +124,14 @@ const config: Config = {
         },
         {
           label: "Developer Manual",
-          to: "/docs/developer/build",
+          to: "/docs/developer/how-to-build",
         },
         {
-          label: "GitHub",
+          label: "Download",
+          href: downloadUrl,
+        },
+        {
+          label: "Source Code",
           href: "https://github.com/polar-bear-app/new-polar-bear",
         },
       ],
@@ -143,6 +149,10 @@ const config: Config = {
       { projectId: "r0gcnlvoyw" },
     ],
   ],
+
+  customFields: {
+    downloadUrl,
+  },
 };
 
 export default config;

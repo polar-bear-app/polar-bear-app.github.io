@@ -9,11 +9,12 @@ If you are seeing this page, the application is performing several tasks in the 
 - It is extracting an Arch Linux ARM64 filesystem.
 - It is installing Xfce4 and other important packages.
 
-This process can take up to 10 minutes. In the meantime, let's spend your precious time to understand some important concepts.
+You can click the progress bar to show/hide the log panel. This process can take up to 10 minutes. In the meantime, let's spend your precious time to understand some important concepts.
+
+You can always revisit this page by going to [polar-bear-app.github.io](https://polar-bear-app.github.io).
 
 :::info Tips
-Click the progress bar to open the log panel. Click it again to close the panel and continue reading.
-You can always revisit this page by going to [polar-bear-app.github.io](https://polar-bear-app.github.io).
+It is highly recommended that you keep the app open in the foreground until the installation is complete.
 :::
 
 ## How to install applications?

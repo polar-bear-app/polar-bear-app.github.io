@@ -1,5 +1,5 @@
 ---
-title: Build from Source
+title: How to build?
 ---
 
 To build Polar Bear from source code, you can follow these steps:

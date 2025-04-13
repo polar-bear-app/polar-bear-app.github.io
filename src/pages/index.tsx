@@ -6,6 +6,7 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 
 import styles from "./index.module.css";
+import config from "@site/docusaurus.config";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -19,16 +20,16 @@ function HomepageHeader() {
         <p>
           <em>
             This app is under active development. A working prototype is
-            available to be built from source. For stability, please wait for
-            the Google Play Store release.
+            available for download. For stability, please wait for the Google
+            Play Store release.
           </em>
         </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/developer/build"
+            to={config.customFields.downloadUrl as string}
           >
-            🛠️ Build from Source
+            Download APK
           </Link>
         </div>
       </div>
