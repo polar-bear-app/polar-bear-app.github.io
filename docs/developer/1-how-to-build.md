@@ -32,3 +32,13 @@ To build Polar Bear from source code, you can follow these steps:
    ```
 
 Then you will find the APK file in `target/x/debug/android/polar-bear.apk`.
+
+## FAQ
+
+### Can I build on Termux?
+
+No. `xbuild` requires `rustup`, which, at the time of writing, is not available on Termux.
+
+### Can I build on Termux & `proot-distro`?
+
+Yes.
