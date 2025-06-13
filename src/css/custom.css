@@ -30,10 +30,6 @@ html[data-theme="dark"] {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-background-color: #000000;
   --ifm-navbar-background-color: var(--ifm-background-color);
-
-  .dark-invert {
-    filter: brightness(0) invert(1);
-  }
 }
 
 .footer--dark {

@@ -2,7 +2,7 @@
 title: Getting Started
 ---
 
-Welcome to Polar Bear!
+Welcome to Local Desktop!
 
 If you are seeing this page, the application is performing several tasks in the background:
 
@@ -11,7 +11,7 @@ If you are seeing this page, the application is performing several tasks in the 
 
 You can click the progress bar to show/hide the log panel. This process can take up to 10 minutes. In the meantime, let's spend your precious time to understand some important concepts.
 
-You can always revisit this page by going to [polar-bear-app.github.io](https://polar-bear-app.github.io).
+You can always revisit this page by going to [local-desktop.github.io](https://local-desktop.github.io).
 
 :::info Tips
 It is highly recommended that you keep the app open in the foreground until the installation is complete.
@@ -19,7 +19,7 @@ It is highly recommended that you keep the app open in the foreground until the 
 
 ## How to install applications?
 
-Polar Bear ships Arch Linux to you. Installing applications is actually easier than on other distros:
+Local Desktop ships Arch Linux to you. Installing applications is actually easier than on other distros:
 
 ```
 pacman -S firefox
@@ -63,7 +63,7 @@ Change the _"Window Scaling"_ setting in _"Applications"_ > _"Settings"_ > _"App
 Must read if you’re using Android 12 or newer!
 :::
 
-Android's "phantom process killer," introduced in Android 12, limits child processes (default 32) or high CPU usage. Applications like Polar Bear and Termux spawn many child processes, and if you don't disable this feature, you may experience **sudden shutdowns**.
+Android's "phantom process killer," introduced in Android 12, limits child processes (default 32) or high CPU usage. Applications like Local Desktop and Termux spawn many child processes, and if you don't disable this feature, you may experience **sudden shutdowns**.
 
 ### Samsung devices
 
@@ -85,4 +85,4 @@ adb shell settings put global settings_enable_monitor_phantom_procs false
 
 ## What didn’t work?
 
-We are still working on the application. If you find any bugs, please open an issue on [GitHub](https://github.com/polar-bear-app/new-polar-bear/issues). Remember to star the project if you want quick updates 😀
+We are still working on the application. If you find any bugs, please open an issue on [GitHub](https://github.com/local-desktop/local-desktop/issues). Remember to star the project if you want quick updates 😀

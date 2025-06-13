@@ -37,7 +37,7 @@ Now you might got the idea of what `proot` is. It is a tool that allows you to r
 
 ### Wrapping it up
 
-The magic behind Polar Bear is that:
+The magic behind Local Desktop is that:
 
 - It scaffolds an Arch Linux filesystem inside the app's internal storage.
 - It `proot` into the filesystem, so that you can have the same file system, the same libraries, and the same system calls. And with the already Linux Kernel that Android has, you can run Linux applications.
@@ -62,7 +62,7 @@ Remember, X11 is a protocol, Xorg is a display server. Although they are often u
 
 ### Wayland
 
-Wayland is a modern display server protocol that is designed to replace X11. And Polar Bear follows this trend. This approach has some advantages:
+Wayland is a modern display server protocol that is designed to replace X11. And Local Desktop follows this trend. This approach has some advantages:
 
 - Wayland servers, more frequently called **compositors**, are much more efficient than X11 servers.
 - By implementing a minimal Wayland compositor, we can run Xwayland on top of it.
@@ -77,7 +77,7 @@ How Xwayland did this, you may ask? It is more obvious than you think: it acts a
 
 ### Wrapping it up
 
-The magic behind Polar Bear is that:
+The magic behind Local Desktop is that:
 
 - It implements a minimal Wayland compositor that runs on an Android native activity.
 - That minimal Wayland compositor runs Xwayland.

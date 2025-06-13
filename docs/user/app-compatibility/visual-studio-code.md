@@ -12,7 +12,7 @@ code --no-sandbox
 
 :::
 
-![Visual Studio Code on Polar Bear](/img/vscode.webp)
+![Visual Studio Code on Local Desktop](/img/vscode.webp)
 
 You can install it from the [AUR](https://aur.archlinux.org/). See [How to install applications?](/docs/user/getting-started#how-to-install-applications) for instructions.
 

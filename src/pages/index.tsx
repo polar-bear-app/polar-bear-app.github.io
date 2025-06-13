@@ -4,9 +4,36 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
-
 import styles from "./index.module.css";
 import config from "@site/docusaurus.config";
+
+export const COMPONENTS = [
+  {
+    name: "Rust",
+    image: "https://avatars.githubusercontent.com/u/5430905?s=48&v=4",
+    link: "https://github.com/rust-lang/rust",
+  },
+  {
+    name: "Smithay",
+    image: "https://avatars.githubusercontent.com/u/29117271?s=48&v=4",
+    link: "https://github.com/Smithay/smithay",
+  },
+  {
+    name: "Arch Linux",
+    image: "https://avatars.githubusercontent.com/u/4673648?s=200&v=4",
+    link: "https://github.com/archlinux",
+  },
+  {
+    name: "XFCE",
+    image: "https://avatars.githubusercontent.com/u/9962578?s=200&v=4",
+    link: "https://github.com/xfce-mirror",
+  },
+  {
+    name: "Wayland",
+    image: "https://avatars.githubusercontent.com/u/16206747?s=200&v=4",
+    link: "https://wayland.freedesktop.org/",
+  },
+];
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -18,11 +45,23 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <p>
-          <em>
-            This app is under active development. A working prototype is
-            available for download. For stability, please wait for the Google
-            Play Store release.
-          </em>
+          <span>Built with love and </span>
+          {COMPONENTS.map((component) => (
+            <a
+              key={component.name}
+              href={component.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                key={component.name}
+                src={component.image}
+                alt={component.name}
+                height={24}
+                style={{ verticalAlign: "middle" }}
+              />
+            </a>
+          ))}
         </p>
         <div className={styles.buttons}>
           <Link

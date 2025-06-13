@@ -2,7 +2,7 @@
 title: Build for unofficially supported platforms
 ---
 
-Polar Bear only ships binaries for ARM64-v8a. However, you can build APKs for other platforms from source.
+Local Desktop only ships binaries for ARM64-v8a. However, you can build APKs for other platforms from source.
 
 :::warning
 This is an advanced topic. Prepare to fix cross-compilation issues.
@@ -10,7 +10,7 @@ This is an advanced topic. Prepare to fix cross-compilation issues.
 
 ## Build Libraries
 
-First, you need to recompile all the libraries that Polar Bear depends on for your architecture.
+First, you need to recompile all the libraries that Local Desktop depends on for your architecture.
 
 ### libproot.so & libproot_loader.so
 
@@ -63,15 +63,15 @@ First, you need to recompile all the libraries that Polar Bear depends on for yo
 
 Thanks to `Smithay`, you don't need to cross-compile `libwayland.so` anymore.
 
-## Build Polar Bear
+## Build Local Desktop
 
 ### libpolar_bear.so
 
-If you extract Polar Bear APK, you would notice a file: `libpolar_bear.so`.
+If you extract Local Desktop APK, you would notice a file: `libpolar_bear.so`.
 
-As you recall, Polar Bear is written in pure Rust. Now you know where all the Rust code goes.
+As you recall, Local Desktop is written in pure Rust. Now you know where all the Rust code goes.
 
-Traditionally, you would need to build `libpolar_bear.so` using `cargo`. Then packaging it inside an APK, which technically a Zip file. To tell Android to load the `*.so` from the Native Activity, you would need to compose an `AndroidManifest.xml` file. Polar Bear uses `Xbuild` to do all of this.
+Traditionally, you would need to build `libpolar_bear.so` using `cargo`. Then packaging it inside an APK, which technically a Zip file. To tell Android to load the `*.so` from the Native Activity, you would need to compose an `AndroidManifest.xml` file. Local Desktop uses `Xbuild` to do all of this.
 
 After you have put all the required libraries above into `assets/libs/<architecture>`, you can build the APK with this command:
 

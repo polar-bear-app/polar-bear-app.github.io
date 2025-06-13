@@ -2,9 +2,9 @@
 title: GIMP
 ---
 
-GIMP works great on Polar Bear.
+GIMP works great on Local Desktop.
 
-![GIMP on Polar Bear](/img/gimp.webp#boxed)
+![GIMP on Local Desktop](/img/gimp.webp#boxed)
 
 You can install it using `pacman`:
 

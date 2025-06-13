@@ -15,7 +15,7 @@ const FeatureList: FeatureItem[] = [
     icon: require("@site/static/img/feature-rootless.webp").default,
     description: (
       <>
-        Polar Bear does <b>not</b> require root access to run.
+        Local Desktop does <b>not</b> require root access to run.
       </>
     ),
   },
@@ -24,8 +24,8 @@ const FeatureList: FeatureItem[] = [
     icon: require("@site/static/img/feature-standalone.webp").default,
     description: (
       <>
-        Polar Bear is <b>not</b> a set of instructions on how to setup a Linux
-        environment using Termux. It is a standalone app that provides a
+        Local Desktop is <b>not</b> a set of instructions on how to setup a
+        Linux environment using Termux. It is a standalone app that provides a
         streamlined Linux experience on Android.
       </>
     ),
@@ -35,9 +35,9 @@ const FeatureList: FeatureItem[] = [
     icon: require("@site/static/img/feature-efficient.webp").default,
     description: (
       <>
-        Polar Bear is built with <b>Rust</b> and runs entirely in native code.
-        By using the <b>Wayland</b> protocol, it incurs less overhead compared
-        to X or VNC alternatives.
+        Local Desktop is built with <b>Rust</b> and runs entirely in native
+        code. By using the <b>Wayland</b> protocol, it incurs less overhead
+        compared to X or VNC alternatives.
       </>
     ),
   },
@@ -46,7 +46,7 @@ const FeatureList: FeatureItem[] = [
     icon: require("@site/static/img/feature-foss.webp").default,
     description: (
       <>
-        Polar Bear is <b>free and open-source</b>, and will always be.
+        Local Desktop is <b>free and open-source</b>, and will always be.
       </>
     ),
   },

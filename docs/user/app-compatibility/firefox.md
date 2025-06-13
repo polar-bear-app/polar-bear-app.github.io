@@ -2,9 +2,9 @@
 title: Firefox
 ---
 
-Firefox works well on Polar Bear. This is one of the ways to use Browser DevTools on your phone.
+Firefox works well on Local Desktop. This is one of the ways to use Browser DevTools on your phone.
 
-![Firefox on Polar Bear](/img/firefox.webp)
+![Firefox on Local Desktop](/img/firefox.webp)
 
 You can install it using `pacman`:
 
@@ -16,12 +16,12 @@ pacman -S firefox
 
 ### Reduced security
 
-In order to fix issue [#139](https://github.com/termux/proot/issues/139), Polar Bear follows [@ZhymabekRoman](https://github.com/termux/proot/issues/139#issuecomment-751988264)'s solution by:
+In order to fix issue [#139](https://github.com/termux/proot/issues/139), Local Desktop follows [@ZhymabekRoman](https://github.com/termux/proot/issues/139#issuecomment-751988264)'s solution by:
 
 - Setting `media.cubeb.sandbox` to `false`.
 - Setting `security.sandbox.content.level` to `0`.
 
-These tweaks are applied automatically using [Firefox AutoConfig](https://support.mozilla.org/en-US/kb/customizing-firefox-using-autoconfig) [on each startup](https://github.com/polar-bear-app/new-polar-bear/commit/e4781875f767cb311452a254f329ba2e1566f885).
+These tweaks are applied automatically using [Firefox AutoConfig](https://support.mozilla.org/en-US/kb/customizing-firefox-using-autoconfig) [on each startup](https://github.com/local-desktop/local-desktop/commit/e4781875f767cb311452a254f329ba2e1566f885).
 
 <details>
 <summary>Consequences</summary>

@@ -2,7 +2,7 @@
 title: Creating a Non-root User
 ---
 
-For a simple setup process, Polar Bear won't prompt for a user registration form, that's why **it is login as root by default**.
+For a simple setup process, Local Desktop won't prompt for a user registration form, that's why **it is login as root by default**.
 
 However, some applications are **recommended** or **required** to run as a normal user. For example:
 
@@ -60,9 +60,9 @@ It should look like:
 
 Save and exit.
 
-## [Important] Tell Polar Bear
+## [Important] Tell Local Desktop
 
-You must tell Polar Bear who to log in as, or it will log in as root. To (create and) edit the config file:
+You must tell Local Desktop who to log in as, or it will log in as root. To (create and) edit the config file:
 
 ```
 nano /etc/polar-bear/polar-bear.toml
@@ -77,4 +77,4 @@ username = "teddy"
 
 _(Replace `teddy` with the username you created [previously](#create-your-user))_
 
-The changes will take effect the next time you launch Polar Bear.
+The changes will take effect the next time you launch Local Desktop.

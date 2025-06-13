@@ -4,16 +4,16 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-const downloadUrl = "https://github.com/polar-bear-app/new-polar-bear/releases";
+const downloadUrl = "https://github.com/Local-Desktop/local-desktop/releases";
 
 const config: Config = {
-  title: "Polar Bear App",
+  title: "Local Desktop",
   tagline:
-    "Polar Bear helps you run a desktop Linux environment on your Android device.",
+    "Local Desktop helps you run a desktop Linux environment on your Android device.",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://polar-bear-app.github.io",
+  url: "https://local-desktop.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -86,13 +86,12 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/polar-bear.png",
+    image: "img/logo.png",
     navbar: {
-      title: "Polar Bear App",
+      title: "Local Desktop",
       logo: {
-        alt: "Polar Bear Logo",
-        src: "img/polar-bear.png",
-        className: "dark-invert",
+        alt: "Local Desktop Logo",
+        src: "img/logo.png",
       },
       items: [
         {
@@ -109,7 +108,7 @@ const config: Config = {
         },
         // { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/polar-bear-app/new-polar-bear",
+          href: "https://github.com/local-desktop/local-desktop",
           label: "GitHub",
           position: "right",
         },
@@ -132,10 +131,10 @@ const config: Config = {
         },
         {
           label: "Source Code",
-          href: "https://github.com/polar-bear-app/new-polar-bear",
+          href: "https://github.com/local-desktop/local-desktop",
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Polar Bear App.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Local Desktop.`,
     },
     prism: {
       theme: prismThemes.github,

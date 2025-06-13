@@ -2,14 +2,14 @@
 title: How to build?
 ---
 
-To build Polar Bear from source code, you can follow these steps:
+To build Local Desktop from source code, you can follow these steps:
 
 1. Make sure `git lfs` is installed. You can install it by following the [official instructions](https://git-lfs.com).
 
 2. Clone the source code repository:
 
    ```
-   git clone https://github.com/polar-bear-app/new-polar-bear.git
+   git clone https://github.com/local-desktop/local-desktop.git
    ```
 
 3. Make sure you already have Rust and Cargo installed. If not, please check the official Rust website for [installation instructions](https://www.rust-lang.org/tools/install). Then, you can install the [xbuild](https://github.com/rust-mobile/xbuild) tool:
