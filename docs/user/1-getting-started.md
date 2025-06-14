@@ -11,7 +11,7 @@ If you are seeing this page, the application is performing several tasks in the 
 
 You can click the progress bar to show/hide the log panel. This process can take up to 10 minutes. In the meantime, let's spend your precious time to understand some important concepts.
 
-You can always revisit this page by going to [local-desktop.github.io](https://local-desktop.github.io).
+You can always revisit this page by going to [localdesktop.github.io](https://localdesktop.github.io).
 
 :::info Tips
 It is highly recommended that you keep the app open in the foreground until the installation is complete.
@@ -85,4 +85,4 @@ adb shell settings put global settings_enable_monitor_phantom_procs false
 
 ## What didn’t work?
 
-We are still working on the application. If you find any bugs, please open an issue on [GitHub](https://github.com/local-desktop/local-desktop/issues). Remember to star the project if you want quick updates 😀
+We are still working on the application. If you find any bugs, please open an issue on [GitHub](https://github.com/localdesktop/localdesktop/issues). Remember to star the project if you want quick updates 😀

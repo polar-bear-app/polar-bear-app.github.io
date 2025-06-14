@@ -79,4 +79,4 @@ After you have put all the required libraries above into `assets/libs/<architect
 x build --release --platform=android --arch=<architecture>
 ```
 
-Then you will find the APK file in `target/x/debug/android/polar-bear.apk`.
+Then you will find the APK file in `target/x/debug/android/localdesktop.apk`.

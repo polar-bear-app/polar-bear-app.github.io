@@ -10,12 +10,11 @@ kanban
         Electron applications but require --no-sandbox
         Applications that require fakeroot, such as sudo, yay, paru,..
         ARM64-v8a with 16 KB ELF alignment for Android 15+
+        Launch as a non-root user
+        Configuration file support: /etc/localdesktop/localdesktop.toml
 
     🗺️ Planed
         Reach proot-distro stability level
-        Configuration file support: /etc/polar-bear/config.toml
-        Launch as a non-root user
-        Debloat ArchFS archive from the APK
 
     💭 Considering
         Audio via PulseAudio

@@ -4,7 +4,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-const downloadUrl = "https://github.com/Local-Desktop/local-desktop/releases";
+const downloadUrl = "https://github.com/localdesktop/localdesktop/releases";
 
 const config: Config = {
   title: "Local Desktop",
@@ -13,7 +13,7 @@ const config: Config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://local-desktop.github.io",
+  url: "https://localdesktop.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -108,7 +108,7 @@ const config: Config = {
         },
         // { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/local-desktop/local-desktop",
+          href: "https://github.com/localdesktop/localdesktop",
           label: "GitHub",
           position: "right",
         },
@@ -131,7 +131,7 @@ const config: Config = {
         },
         {
           label: "Source Code",
-          href: "https://github.com/local-desktop/local-desktop",
+          href: "https://github.com/localdesktop/localdesktop",
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Local Desktop.`,

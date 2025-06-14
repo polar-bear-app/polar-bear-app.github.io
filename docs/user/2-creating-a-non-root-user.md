@@ -65,12 +65,12 @@ Save and exit.
 You must tell Local Desktop who to log in as, or it will log in as root. To (create and) edit the config file:
 
 ```
-nano /etc/polar-bear/polar-bear.toml
+nano /etc/localdesktop/localdesktop.toml
 ```
 
 Add the following content:
 
-```toml title="/etc/polar-bear/polar-bear.toml"
+```toml title="/etc/localdesktop/localdesktop.toml"
 [user]
 username = "teddy"
 ```
