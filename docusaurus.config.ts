@@ -5,6 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const downloadUrl = "https://github.com/localdesktop/localdesktop/releases";
+const repositoryUrl = "https://github.com/localdesktop/localdesktop";
 
 const config: Config = {
   title: "Local Desktop",
@@ -108,7 +109,7 @@ const config: Config = {
         },
         // { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/localdesktop/localdesktop",
+          href: repositoryUrl,
           label: "GitHub",
           position: "right",
         },
@@ -126,12 +127,16 @@ const config: Config = {
           to: "/docs/developer/how-to-build",
         },
         {
+          label: "Support us 🎗️",
+          to: "/support-us",
+        },
+        {
           label: "Download",
           href: downloadUrl,
         },
         {
           label: "Source Code",
-          href: "https://github.com/localdesktop/localdesktop",
+          href: repositoryUrl,
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Local Desktop.`,
@@ -170,6 +175,7 @@ const config: Config = {
 
   customFields: {
     downloadUrl,
+    repositoryUrl,
   },
 };
 

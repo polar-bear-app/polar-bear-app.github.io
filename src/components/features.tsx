@@ -60,13 +60,13 @@ function Feature({ title, icon, description }: FeatureItem) {
         <Heading as="h3" className="text-xl font-bold mt-4 mb-2">
           {title}
         </Heading>
-        <p className="text-gray-600">{description}</p>
+        <p className="opacity-75">{description}</p>
       </div>
     </div>
   );
 }
 
-export default function HomepageFeatures(): ReactNode {
+export default function Features(): ReactNode {
   return (
     <section className="flex items-center justify-center py-8 w-full">
       <div className="container mx-auto px-4">
