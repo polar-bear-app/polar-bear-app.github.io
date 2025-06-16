@@ -2,9 +2,8 @@ import type { ReactNode } from "react";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import Features from "@site/src/components/features";
 import Heading from "@theme/Heading";
-import styles from "./index.module.css";
 import config from "@site/docusaurus.config";
 
 export const COMPONENTS = [
@@ -38,7 +37,7 @@ export const COMPONENTS = [
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={styles.heroBanner}>
+    <header className="py-8 lg:py-16 text-center relative overflow-hidden">
       <div className="container">
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
@@ -46,24 +45,26 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <p>
           <span>Built with love and </span>
-          {COMPONENTS.map((component) => (
-            <a
-              key={component.name}
-              href={component.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
+          <span className="inline-flex">
+            {COMPONENTS.map((component) => (
+              <a
                 key={component.name}
-                src={component.image}
-                alt={component.name}
-                height={24}
-                style={{ verticalAlign: "middle" }}
-              />
-            </a>
-          ))}
+                href={component.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  key={component.name}
+                  src={component.image}
+                  alt={component.name}
+                  style={{ verticalAlign: "middle" }}
+                  className="h-6"
+                />
+              </a>
+            ))}
+          </span>
         </p>
-        <div className={styles.buttons}>
+        <div className="flex items-center justify-center">
           <Link
             className="button button--secondary button--lg"
             to={config.customFields.downloadUrl as string}
@@ -76,13 +77,15 @@ function HomepageHeader() {
   );
 }
 
+function HomepageFuture() {}
+
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout title="Home" description={siteConfig.tagline}>
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <Features />
       </main>
     </Layout>
   );

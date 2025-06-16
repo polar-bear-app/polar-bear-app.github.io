@@ -150,6 +150,16 @@ const config: Config = {
       "@gracefullight/docusaurus-plugin-microsoft-clarity",
       { projectId: "r0gcnlvoyw" },
     ],
+    () => ({
+      name: "@tailwindcss/postcss",
+      configurePostCss(options) {
+        // Setup TailwindCSS via PostCSS
+        options.plugins.push({
+          "@tailwindcss/postcss": {},
+        });
+        return options;
+      },
+    }),
   ],
 
   markdown: {

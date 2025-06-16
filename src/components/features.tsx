@@ -1,7 +1,5 @@
 import type { ReactNode } from "react";
-import clsx from "clsx";
 import Heading from "@theme/Heading";
-import styles from "./styles.module.css";
 
 type FeatureItem = {
   title: string;
@@ -54,13 +52,15 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({ title, icon, description }: FeatureItem) {
   return (
-    <div className={clsx("col col--3")}>
-      <div className="text--center">
-        <img className={styles.featureSvg} role="img" src={icon} />
+    <div className="w-full md:w-1/4 px-4">
+      <div className="text-center">
+        <img className="h-20 w-20 mx-auto" role="img" src={icon} alt={title} />
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+      <div className="text-center px-4">
+        <Heading as="h3" className="text-xl font-bold mt-4 mb-2">
+          {title}
+        </Heading>
+        <p className="text-gray-600">{description}</p>
       </div>
     </div>
   );
@@ -68,9 +68,9 @@ function Feature({ title, icon, description }: FeatureItem) {
 
 export default function HomepageFeatures(): ReactNode {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
+    <section className="flex items-center justify-center py-8 w-full">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap -mx-4">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}

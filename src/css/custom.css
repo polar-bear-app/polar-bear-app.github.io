@@ -3,6 +3,9 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
 
 /* You can override the default Infima variables here. */
 :root {
@@ -43,6 +46,7 @@ img[src$="#boxed"] {
   border-radius: 8px;
   max-width: 80%;
 }
+
 p:has(img[src$="#boxed"]) {
   text-align: center;
 }
