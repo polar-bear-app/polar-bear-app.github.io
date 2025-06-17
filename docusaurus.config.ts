@@ -176,6 +176,7 @@ const config: Config = {
   customFields: {
     downloadUrl,
     repositoryUrl,
+    emailCollectForm: "https://forms.gle/UDrYH9xwhznT2u8Y9",
   },
 };
 

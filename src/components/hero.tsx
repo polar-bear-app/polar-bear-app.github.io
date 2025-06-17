@@ -61,12 +61,18 @@ export default function Hero() {
             ))}
           </span>
         </p>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center gap-4 ">
           <Link
             className="button button--secondary button--lg"
             to={config.customFields.downloadUrl as string}
           >
             Download APK
+          </Link>
+          <Link
+            className="button button--primary button--lg"
+            to={config.customFields.emailCollectForm as string}
+          >
+            Help us release on Google Play
           </Link>
         </div>
       </div>

@@ -22,9 +22,8 @@ const FeatureList: FeatureItem[] = [
     icon: require("@site/static/img/feature-standalone.webp").default,
     description: (
       <>
-        Local Desktop is <b>not</b> a set of instructions on how to setup a
-        Linux environment using Termux. It is a standalone app that provides a
-        streamlined Linux experience on Android.
+        Local Desktop allows you to start Linux on your Android device with just{" "}
+        <b>one</b> tap, all in <b>one</b> app.
       </>
     ),
   },
