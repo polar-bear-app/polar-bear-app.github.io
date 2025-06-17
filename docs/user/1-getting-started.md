@@ -11,7 +11,7 @@ If you are seeing this page, the application is performing several tasks in the 
 
 You can click the progress bar to show/hide the log panel. This process can take up to 10 minutes. In the meantime, let's spend your precious time to understand some important concepts.
 
-You can always revisit this page by going to [localdesktop.github.io](https://localdesktop.github.io).
+You can always revisit this page by going to [localdesktop.github.io](/).
 
 :::info Tips
 It is highly recommended that you keep the app open in the foreground until the installation is complete.
