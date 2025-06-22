@@ -76,7 +76,7 @@ Traditionally, you would need to build `libpolar_bear.so` using `cargo`. Then pa
 After you have put all the required libraries above into `assets/libs/<architecture>`, you can build the APK with this command:
 
 ```
-x build --release --platform=android --arch=<architecture>
+x build --release --format=apk --platform=android --arch=<architecture>
 ```
 
-Then you will find the APK file in `target/x/debug/android/localdesktop.apk`.
+Then you will find the APK file in `target/x/release/android/localdesktop.apk`.
