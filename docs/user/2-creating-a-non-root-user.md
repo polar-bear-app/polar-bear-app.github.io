@@ -22,11 +22,10 @@ Open a terminal and run the following command:
 _(Replace `teddy` with your preferred username)_
 
 ```bash
-useradd -m -G wheel teddy
+useradd -m teddy
 ```
 
-- The `-m` flag creates a home directory for the user.
-- The `-G wheel` option adds the user to the `wheel` group, allowing `sudo` access.
+The `-m` flag creates a home directory for the user.
 
 ## Create your password
 
@@ -38,27 +37,36 @@ passwd teddy
 
 ## Set up `sudo`
 
-Install `sudo` using `pacman` for convenience...
+Once you have logged in as a non-root user, you **must** use `sudo` to run commands with root privileges. If you skip this step, you **won't** be able to install new packages.
 
-Edit the sudoers file to allow members of the `wheel` group to use `sudo`:
+Install `sudo`:
+
+```bash
+pacman -S sudo
+```
+
+Allow your user to use `sudo` by editing the sudoers file:
 
 ```bash
 EDITOR=nano visudo
 ```
 
-Uncomment the following line by removing the `#`:
+Append a new line:
 
 ```
-# %wheel ALL=(ALL:ALL) ALL
+teddy ALL=(ALL) ALL
 ```
 
-It should look like:
-
-```
-%wheel ALL=(ALL:ALL) ALL
-```
+_(Replace `teddy` with the username you created [previously](#create-your-user))_
 
 Save and exit.
+
+You can test if your new user can use `sudo` by temporarily logging in:
+
+```bash
+su teddy # Change to your username
+sudo ls /root # Make sure it does not output something like: "teddy is not in the sudoers file"
+```
 
 ## [Important] Tell Local Desktop
 
@@ -77,4 +85,4 @@ username = "teddy"
 
 _(Replace `teddy` with the username you created [previously](#create-your-user))_
 
-The changes will take effect the next time you launch Local Desktop.
+The changes will take effect the next time you launch Local Desktop. If something goes wrong, you can always delete this config file and restart as root.
